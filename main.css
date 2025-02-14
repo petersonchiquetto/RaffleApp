@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@600;700&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #FFFFFF;
+    min-height: 100vh;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(1, 8, 14, 1) 25%, rgba(80, 94, 255, 0.85) 50%, rgba(1, 8, 14, 1) 75%, rgba(0, 0, 0, 1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+        padding: 2rem calc((100vw - 1086px)/2);
+    }
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page-title {
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 700;
+    font-size: 5rem;
+    margin-bottom: 2.5rem;
+}
+
+.page-title__emphasis {
+    color: #505EFF;
+}
+
+.formulario {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 2rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #00F4BF;
+    padding: 3rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.campo-grupo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+.campo-label {
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.campo-input {
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.botoes-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.botao {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    background-color: #1875E8;
+    cursor: pointer;
+}
+
+.resultado-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2.5rem;
+}
