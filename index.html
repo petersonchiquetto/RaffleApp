@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteador</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <main class="container main">
+        <h1 class="page-title">Sorteador de <span class="page-title__emphasis">números</span></h1>
+
+        <form class="formulario">
+            <label class="campo-grupo">
+                <span class="campo-label">Quantidade de números</span>
+                <input class="campo-input" id="quantidade" type="number">
+            </label>
+            
+            <div class="campo-grupo">
+                <label class="campo-label">De</label>
+                <input class="campo-input" id="de" type="number">
+            </div>
+
+            <div class="campo-grupo">
+                <label class="campo-label">Até</label>
+                <input class="campo-input" id="ate" type="number" placeholder=" ">
+            </div>
+           
+            <section class="botoes-wrapper">
+                <button type="button" onclick="sortear()" class="botao">Sortear</button>
+                <button type="button" onclick="reiniciar()"  class="botao">Reiniciar</button>
+            </section>
+
+            <section class="resultado-wrapper" id="resultado">
+                <span class="campo-label">Números sorteados:  nenhum até agora</span>
+            </section>
+        </form>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
